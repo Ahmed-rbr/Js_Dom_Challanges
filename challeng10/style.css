@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 7px 14px rgba(0, 0, 0, 0.3);
+  padding: 16px 24px;
+}
+input {
+  width: 100%;
+  padding: 4px 6px;
+}
+p {
+  color: red;
+}
+.btn {
+  width: 50%;
+
+  background-color: rgb(55, 104, 210);
+  color: white;
+  border-radius: 8px;
+  border: none;
+  padding: 6px 6px;
+}
