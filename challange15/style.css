@@ -6,7 +6,7 @@
 
 body {
   width: 100vw;
-  height: 90vh;
+  min-height: 100vh;
   margin: auto;
   padding: 8px 16px;
   box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.3);
@@ -41,7 +41,7 @@ body {
 ul {
   padding: 24px 16px;
   margin: 2px auto;
-  width: 15%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -57,18 +57,44 @@ ul {
   z-index: 4;
 }
 li {
+  width: 100%;
   padding: 6px 24px;
   background: rgb(33, 102, 207);
   color: white;
   border-radius: 8px;
+  position: relative;
+  text-align: center;
 }
 .done {
   text-decoration: line-through;
   background-color: red;
   transition: all 0.4s;
 }
+.delete {
+  color: rgb(15, 15, 15);
+  font-weight: 600;
+  position: absolute;
+  right: 2%;
+  top: 2%;
+}
+.undoAll {
+  background-color: green;
+}
+
+.markAll {
+  background-color: red;
+}
+
+.delete:hover {
+  transform: scale(114%);
+}
+.actions {
+  display: flex;
+  gap: 16px;
+}
+
 li:hover {
-  background: red;
+  background: rgb(52, 104, 184);
   cursor: pointer;
 }
 
