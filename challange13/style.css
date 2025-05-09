@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+}
+
+ul {
+  padding: 24px 16px;
+  margin: 20px auto;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.3);
+  background-color: aliceblue;
+  gap: 12px;
+}
+
+li {
+  padding: 6px 24px;
+  background: rgb(33, 102, 207);
+  color: white;
+  border-radius: 8px;
+}
+.done {
+  text-decoration: line-through;
+  background-color: red;
+  transition: all 0.4s;
+}
+li:hover {
+  background: red;
+  cursor: pointer;
+}
